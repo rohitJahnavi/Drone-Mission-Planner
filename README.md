@@ -19,7 +19,7 @@ Problem Definition:-
 * Velocity: The paths are calculated considering a fixed velocity (v m/s). The paths must not overlap at any time, ensuring no collisions between multiple paths.
 * Shortest Path Algorithm: The algorithm computes the shortest path for each set of start and end points. It accounts for both the weight of the grid and the constraint that no two paths share the same point at the same time.
 
-
+ 
 Approach:- 
 
 a. Shortest Path Calculation with Velocity Constraints
@@ -66,7 +66,7 @@ Assign high weights randomly:-
    * Boundary Check: It ensures that the neighbor is within the bounds of the grid.
    * Update Scores: If a neighbor hasn't been visited yet, or if the new path to it is better (lower g-score), the algorithm updates the scores and adds the neighbor to the priority queue for further exploration.
  
-3. * No Path Found
+3. * No Path Found :
 
    *  Multiple sets of start and end points are processed sequentially, ensuring that paths do not interfere with each other at the same time.
    * Return None: If the algorithm exhausts the open set without reaching the goal, it means no path exists from the start to the goal.
@@ -76,7 +76,7 @@ Assign high weights randomly:-
    * Once the paths are calculated, the results are visualized in 3D using Matplotlib and mpl_toolkits.mplot3d. The paths are plotted in different colors or markers to distinguish between them.
 
 
-
+# Ans 2. :-
 
 * Create the Dictionary of 15 Waypoints:
    
