@@ -19,6 +19,16 @@ Problem Definition:-
 * Velocity: The paths are calculated considering a fixed velocity (v m/s). The paths must not overlap at any time, ensuring no collisions between multiple paths.
 * Shortest Path Algorithm: The algorithm computes the shortest path for each set of start and end points. It accounts for both the weight of the grid and the constraint that no two paths share the same point at the same time.
 
+
+Approach:- 
+
+a. Shortest Path Calculation with Velocity Constraints
+
+* Grid Creation: A 3D grid is created, with each point either having a random weight (higher cost) or zero (free point).
+* GRID_SIZE: This tuple represents the dimensions of the 3D grid. It spans from (0,0,0) to (100,100,100), with unit increments along each axis (i.e., each coordinate in the grid ranges from 0 to 100 along x, y, and z).
+* The grid is essentially a 3D array with the shape (101, 101, 101) since the points include both endpoints.
+
+
 import numpy as np
 
 * This imports the NumPy library and assigns it the alias np.
