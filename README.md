@@ -25,8 +25,8 @@ Approach:-
 a. Shortest Path Calculation with Velocity Constraints
 
 1. * Grid Creation: A 3D grid is created, with each point either having a random weight (higher cost) or zero (free point).
-* GRID_SIZE: This tuple represents the dimensions of the 3D grid. It spans from (0,0,0) to (100,100,100), with unit increments along each axis (i.e., each coordinate in the grid ranges from 0 to 100 along x, y, and z).
-* The grid is essentially a 3D array with the shape (101, 101, 101) since the points include both endpoints.
+   * GRID_SIZE: This tuple represents the dimensions of the 3D grid. It spans from (0,0,0) to (100,100,100), with unit increments along each axis (i.e., each coordinate in the grid ranges from 0 to 100 along x, y, and z).
+   * The grid is essentially a 3D array with the shape (101, 101, 101) since the points include both endpoints.
 
 Create grid with random weights:-
 
