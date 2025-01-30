@@ -59,3 +59,13 @@ Assign high weights randomly:-
   * Priority Queue: The algorithm pops the point with the lowest f_score from the open_set.
   * Goal Check: If the current point equals the goal, the path is reconstructed by backtracking through the came_from dictionary.
   * Path Reconstruction: The path is built by following the came_from dictionary, starting from the goal and moving backwards to the start. It is then reversed to return the correct order from start to goal.
+
+* Exploring Neighbors
+
+   * Neighbors Exploration: For each neighbor of the current point, the algorithm calculates its tentative g-score (cost to reach this neighbor). This is the current g-score plus the cost of moving to the neighbor (1 for normal points, plus the weight of the neighbor).
+   * Boundary Check: It ensures that the neighbor is within the bounds of the grid.
+   * Update Scores: If a neighbor hasn't been visited yet, or if the new path to it is better (lower g-score), the algorithm updates the scores and adds the neighbor to the priority queue for further exploration.
+ 
+* No Path Found
+
+  * Return None: If the algorithm exhausts the open set without reaching the goal, it means no path exists from the start to the goal.
