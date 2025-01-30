@@ -84,3 +84,43 @@ Assign high weights randomly:-
 * Convert Waypoints into DroneKit Locations:
   
      * To convert your waypoints into LocationGlobalRelative objects (which DroneKit uses for mission waypoints), you can iterate through your list of waypoints and create a list of LocationGlobalRelative objects.
+
+
+* Planning the Drone Mission :
+
+     * This section of the code is responsible for planning the mission by clearing any existing mission commands, adding new mission items (waypoints), and uploading the updated mission to the vehicle. This ensures that the drone follows a set of predefined waypoints.
+
+
+
+* Inserting a New Waypoint After 10 Waypoints :
+
+     * This section of the project adds a new waypoint 100 meters perpendicular to the current direction of travel after the drone has passed the first 10 waypoints. In this example, the new waypoint is placed 100 meters to the east of the 10th waypoint. After inserting the new waypoint, the mission is uploaded to the vehicle, updating the flight plan.
+
+
+* Starting the Drone Mission:
+  
+     * This section of the code is responsible for starting the mission by arming the drone and setting it to AUTO mode, which allows the drone to autonomously follow the mission waypoints.
+
+
+
+* Monitoring Drone Mission Progress:
+
+   * This part of the project continuously monitors the progress of the drone as it moves through the waypoints, updating the distance to the next waypoint and printing the progress at regular intervals.
+
+
+* 2D Path Visualization of Drone Mission
+
+     * This section of the project handles the visualization of the drone's flight path in 2D. The path is plotted on a longitude vs latitude plane, showing the route the drone will take across all waypoints.
+
+
+* Steps to Plot the 2D Path:
+
+  1. Extract Latitude and Longitude: The waypoints dictionary contains the geographic coordinates (latitude and longitude) of the drone's waypoints. We extract the latitudes and longitudes to plot them.
+  2. Plot the Path: Using Matplotlib, we plot the flight path. Each waypoint is represented by a point on the plot, and the path between them is shown as a connected line.
+     * 'bo-': The 'b' represents blue color for the path, the 'o' represents circular markers for the waypoints, and the '-' connects the waypoints with a line.
+     * label: The label "Flight Path" will appear in the legend for the plot
+  3. Add Labels and Title: The axes are labeled, and a title is added to the plot to make it clearer.
+  4. Display the Legend: The legend is displayed to differentiate the flight path, especially if multiple paths are plotted.
+  5. Show the Plot: Finally, the plot is shown with plt.show(), which renders the 2D path visualization.
+  6. Close the Vehicle Connection: After the mission and plotting are complete, the connection to the vehicle is closed.
+
