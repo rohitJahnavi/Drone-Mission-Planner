@@ -46,3 +46,10 @@ Assign high weights randomly:-
      
    Heuristic Function:
    * The A* algorithm uses a heuristic (like the Euclidean distance or Manhattan distance) to guide the search towards the goal efficiently.
+   * Purpose: This function calculates the Euclidean distance between two points a and b in the grid. The Euclidean distance is used as the heuristic for the A* algorithm, which helps estimate the cost to reach the goal from any given point.
+   * np.linalg.norm: Computes the magnitude (or distance) between two points in 3D space, which is useful for estimating the remaining distance in the A* algorithm.
+   * neighbors: These are the relative coordinates of neighboring points in the 3D grid (6 possible directions: x, y, z).
+   * open_set: A priority queue (min-heap) to hold the points to explore, prioritized by their f_score. It starts with the starting point.
+   * came_from: A dictionary to trace the path by storing where each point came from.
+   * g_score: A dictionary that keeps track of the cost to reach each point. Initially, the starting point has a score of 0.
+   * f_score: A dictionary that stores the sum of the g_score and the heuristic estimate (f_score = g_score + heuristic).
