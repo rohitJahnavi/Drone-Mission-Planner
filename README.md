@@ -66,7 +66,7 @@ Assign high weights randomly:-
    * Boundary Check: It ensures that the neighbor is within the bounds of the grid.
    * Update Scores: If a neighbor hasn't been visited yet, or if the new path to it is better (lower g-score), the algorithm updates the scores and adds the neighbor to the priority queue for further exploration.
  
-3 * No Path Found
+3  * No Path Found
 
    *  Multiple sets of start and end points are processed sequentially, ensuring that paths do not interfere with each other at the same time.
    * Return None: If the algorithm exhausts the open set without reaching the goal, it means no path exists from the start to the goal.
