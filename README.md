@@ -55,3 +55,7 @@ Assign high weights randomly:-
    * f_score: A dictionary that stores the sum of the g_score and the heuristic estimate (f_score = g_score + heuristic).
   
 * Main Loop (Pathfinding)
+
+  * Priority Queue: The algorithm pops the point with the lowest f_score from the open_set.
+  * Goal Check: If the current point equals the goal, the path is reconstructed by backtracking through the came_from dictionary.
+  * Path Reconstruction: The path is built by following the came_from dictionary, starting from the goal and moving backwards to the start. It is then reversed to return the correct order from start to goal.
