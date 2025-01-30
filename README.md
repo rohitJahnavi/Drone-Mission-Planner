@@ -27,6 +27,16 @@ a. Shortest Path Calculation with Velocity Constraints
 * Grid Creation: A 3D grid is created, with each point either having a random weight (higher cost) or zero (free point).
 * GRID_SIZE: This tuple represents the dimensions of the 3D grid. It spans from (0,0,0) to (100,100,100), with unit increments along each axis (i.e., each coordinate in the grid ranges from 0 to 100 along x, y, and z).
 * The grid is essentially a 3D array with the shape (101, 101, 101) since the points include both endpoints.
+* np.random.seed(42): This ensures that the random generation is reproducible.
+* grid = np.zeros(GRID_SIZE): This initializes the 3D grid with zeros, indicating that initially all points are free to traverse.
+* num_high_weight_points = 500: This specifies how many points in the grid should be assigned a high weight (obstacles or higher travel cost).
+
+Assign high weights randomly:-
+
+* for _ in range(num_high_weight_points): This loop runs num_high_weight_points times (500 times in this case), randomly selecting a point in the 3D grid each time.
+* x, y, z = np.random.randint(0, 101, 3): For each iteration, three random integers between 0 and 100 (inclusive) are generated, corresponding to the x, y, and z coordinates of the grid point.
+* grid[x, y, z] = high_weight_value: The grid point at the random coordinates (x, y, z) is assigned the high weight value (100), representing obstacles or higher travel costs.
+
 
 
 import numpy as np
