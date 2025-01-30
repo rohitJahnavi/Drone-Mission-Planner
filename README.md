@@ -68,5 +68,11 @@ Assign high weights randomly:-
  
 3 * No Path Found
 
-  *  Multiple sets of start and end points are processed sequentially, ensuring that paths do not interfere with each other at the same time.
-  * Return None: If the algorithm exhausts the open set without reaching the goal, it means no path exists from the start to the goal.
+   *  Multiple sets of start and end points are processed sequentially, ensuring that paths do not interfere with each other at the same time.
+   * Return None: If the algorithm exhausts the open set without reaching the goal, it means no path exists from the start to the goal.
+
+ b. 3D Visualization of Paths
+     
+   * Once the paths are calculated, the results are visualized in 3D using Matplotlib and mpl_toolkits.mplot3d. The paths are plotted in different colors or markers to distinguish between them.
+
+
