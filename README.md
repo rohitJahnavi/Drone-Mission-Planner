@@ -43,5 +43,6 @@ Assign high weights randomly:-
 
 
 2. * A Algorithm*: The shortest path for each set of start and end points is computed using the A algorithm*. This algorithm is particularly efficient for pathfinding in weighted grids.
-     Heuristic Function:
-     * The A* algorithm uses a heuristic (like the Euclidean distance or Manhattan distance) to guide the search towards the goal efficiently.
+     
+   Heuristic Function:
+   * The A* algorithm uses a heuristic (like the Euclidean distance or Manhattan distance) to guide the search towards the goal efficiently.
