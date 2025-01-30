@@ -12,6 +12,13 @@ Key Features:
 * Velocity Constraints: Paths are calculated with the condition that they don't intersect at the same time.
 * 3D Visualization: The paths are plotted in 3D space to visualize the results.
 
+Problem Definition:-
+
+* Grid: A 3D grid with coordinates spanning from (0,0,0) to (100,100,100) with unit increments along each axis. Some grid points have a weight (higher travel cost), while others have zero weight (free to move).
+* Start/End Points: The user inputs multiple start and end points. Each pair represents the start and destination of a path.
+* Velocity: The paths are calculated considering a fixed velocity (v m/s). The paths must not overlap at any time, ensuring no collisions between multiple paths.
+* Shortest Path Algorithm: The algorithm computes the shortest path for each set of start and end points. It accounts for both the weight of the grid and the constraint that no two paths share the same point at the same time.
+
 import numpy as np
 
 * This imports the NumPy library and assigns it the alias np.
