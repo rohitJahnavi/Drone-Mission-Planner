@@ -75,8 +75,7 @@ Assign high weights randomly:-
      
    * Once the paths are calculated, the results are visualized in 3D using Matplotlib and mpl_toolkits.mplot3d. The paths are plotted in different colors or markers to distinguish between them.
 
-
-1. Create the Dictionary of 15 Waypoints
+* Create the Dictionary of 15 Waypoints
    
  * Let's start by defining a dictionary for 15 waypoints, each containing 'lat', 'lon', and 'alt'.
  * These waypoints are just placeholders (San Francisco coordinates), and you can adjust them according to your needs.
