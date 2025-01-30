@@ -53,3 +53,5 @@ Assign high weights randomly:-
    * came_from: A dictionary to trace the path by storing where each point came from.
    * g_score: A dictionary that keeps track of the cost to reach each point. Initially, the starting point has a score of 0.
    * f_score: A dictionary that stores the sum of the g_score and the heuristic estimate (f_score = g_score + heuristic).
+  
+* Main Loop (Pathfinding)
