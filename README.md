@@ -117,12 +117,12 @@ Assign high weights randomly:-
 
 * Steps to Plot the 2D Path:
 
-  1. Extract Latitude and Longitude: The waypoints dictionary contains the geographic coordinates (latitude and longitude) of the drone's waypoints. We extract the latitudes and longitudes to plot them.
-  2. Plot the Path: Using Matplotlib, we plot the flight path. Each waypoint is represented by a point on the plot, and the path between them is shown as a connected line.
+   * Extract Latitude and Longitude: The waypoints dictionary contains the geographic coordinates (latitude and longitude) of the drone's waypoints. We extract the latitudes and longitudes to plot them.
+   * Plot the Path: Using Matplotlib, we plot the flight path. Each waypoint is represented by a point on the plot, and the path between them is shown as a connected line.
      * 'bo-': The 'b' represents blue color for the path, the 'o' represents circular markers for the waypoints, and the '-' connects the waypoints with a line.
      * label: The label "Flight Path" will appear in the legend for the plot
-  3. Add Labels and Title: The axes are labeled, and a title is added to the plot to make it clearer.
-  4. Display the Legend: The legend is displayed to differentiate the flight path, especially if multiple paths are plotted.
-  5. Show the Plot: Finally, the plot is shown with plt.show(), which renders the 2D path visualization.
-  6. Close the Vehicle Connection: After the mission and plotting are complete, the connection to the vehicle is closed.
+   * Add Labels and Title: The axes are labeled, and a title is added to the plot to make it clearer.
+   * Display the Legend: The legend is displayed to differentiate the flight path, especially if multiple paths are plotted.
+   *  Show the Plot: Finally, the plot is shown with plt.show(), which renders the 2D path visualization.
+   * Close the Vehicle Connection: After the mission and plotting are complete, the connection to the vehicle is closed.
 
